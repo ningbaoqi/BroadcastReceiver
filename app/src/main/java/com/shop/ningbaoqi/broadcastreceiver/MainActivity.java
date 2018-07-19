@@ -3,6 +3,7 @@ package com.shop.ningbaoqi.broadcastreceiver;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /**
+         * 动态注册广播 只有执行了 onCreate 方法，才能注册该广播
+         * */
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction("dashuige");
+        receiver = new MyReceiver();
+        registerReceiver(receiver, intentFilter);
+    }
+
+    private MyReceiver receiver;
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        /**
+         * 取消注册
+         * */
+        unregisterReceiver(receiver);
     }
 
     public void sendNormalBroadcast(View view) {
@@ -22,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         intent.setFlags(Intent.FLAG_EXCLUDE_STOPPED_PACKAGES);
         sendBroadcast(intent);
     }
+
     public void sendOrderBroadcast(View view) {
         Intent intent = new Intent();
         intent.setAction("order");
@@ -37,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
      */
     class MyReceiver extends BroadcastReceiver {
         @Override
-        public void onReceive(Context context, Intent intent) {}
+        public void onReceive(Context context, Intent intent) {
+        }
     }
 }

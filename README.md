@@ -6,3 +6,5 @@
 [发送有序广播](https://github.com/ningbaoqi/BroadcastReceiver/commit/618a16e1c534055cc35816531928137af6b15b75)
 ### 静态注册广播
 [静态注册广播](https://github.com/ningbaoqi/BroadcastReceiver/commit/693d5f9dd4c3f3ca02f9732ad572f7b8a42910a6)
+### 动态注册广播
+[动态注册广播](https://github.com/ningbaoqi/BroadcastReceiver/commit/693d5f9dd4c3f3ca02f9732ad572f7b8a42910a6)
