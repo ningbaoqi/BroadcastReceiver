@@ -11,4 +11,4 @@
 ### 阻止广播续传
 [阻止广播续传](https://github.com/ningbaoqi/BroadcastReceiver/commit/b02a055ba868dd05aaccf88cb31c13a2f1135dc9)
 ### 使用广播实现IP拨号器
-[使用广播实现IP拨号器](https://github.com/ningbaoqi/BroadcastReceiver/commit/b02a055ba868dd05aaccf88cb31c13a2f1135dc9)
+[使用广播实现IP拨号器](https://github.com/ningbaoqi/BroadcastReceiver/commit/195d528edd1305051d178c949192559a5bd0ef19)
