@@ -1,5 +1,7 @@
 package com.shop.ningbaoqi.broadcastreceiver;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,5 +21,22 @@ public class MainActivity extends AppCompatActivity {
         intent.setAction("dashuige");
         intent.setFlags(Intent.FLAG_EXCLUDE_STOPPED_PACKAGES);
         sendBroadcast(intent);
+    }
+    public void sendOrderBroadcast(View view) {
+        Intent intent = new Intent();
+        intent.setAction("order");
+        /**
+         * 发送有序广播，广播接收器将会按照优先级依次收到广播，并且可以拦截广播
+         * 普通广播是异步的，在同一时刻所有广播接收器都能接收到，消息传递效率比较高，缺点是无法终止广播传播
+         * */
+        sendOrderedBroadcast(intent, null, new MyReceiver(), null, 0, null, null);
+    }
+
+    /**
+     * 最终广播接收器,并且在广播传递过程中最后收到，无论广播是不是被拦截，都会收到，不需要在清单文件中配置，该广播接收器只接收该广播
+     */
+    class MyReceiver extends BroadcastReceiver {
+        @Override
+        public void onReceive(Context context, Intent intent) {}
     }
 }
