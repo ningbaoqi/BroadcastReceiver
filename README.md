@@ -14,3 +14,5 @@
 [使用广播实现IP拨号器](https://github.com/ningbaoqi/BroadcastReceiver/commit/195d528edd1305051d178c949192559a5bd0ef19)
 ### 使用广播接收器实现监听系统包的状态
 [使用广播接收器实现监听系统包的状态](https://github.com/ningbaoqi/BroadcastReceiver/commit/dfae7ff6c8deacfded83fe8782b92f5ebd521f38)
+### 使用广播接收器实现开机自启动
+[使用广播接收器实现开机自启动](https://github.com/ningbaoqi/BroadcastReceiver/commit/dfae7ff6c8deacfded83fe8782b92f5ebd521f38)
