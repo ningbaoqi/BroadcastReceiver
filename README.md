@@ -8,3 +8,5 @@
 [静态注册广播](https://github.com/ningbaoqi/BroadcastReceiver/commit/693d5f9dd4c3f3ca02f9732ad572f7b8a42910a6)
 ### 动态注册广播
 [动态注册广播](https://github.com/ningbaoqi/BroadcastReceiver/commit/221e1310a8102918c0444f1c33c278c50b802e03)
+### 阻止广播续传
+[阻止广播续传](https://github.com/ningbaoqi/BroadcastReceiver/commit/221e1310a8102918c0444f1c33c278c50b802e03)

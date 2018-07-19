@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -58,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
     class MyReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
+            String msg = intent.getStringExtra("msg");
+            Log.d("nbq", "msh : " + msg);
+            /**
+             * 阻止广播向其他广播接收器传递,只能阻止有序广播
+             * */
+            abortBroadcast();
         }
     }
 }
