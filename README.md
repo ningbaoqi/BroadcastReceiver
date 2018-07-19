@@ -17,4 +17,4 @@
 ### 使用广播接收器实现开机自启动
 [使用广播接收器实现开机自启动](https://github.com/ningbaoqi/BroadcastReceiver/commit/0f10f9629507854bbdf254516c12753070de36e2)
 ### 使用广播接收器监听SD卡状态
-[使用广播接收器监听SD卡状态](https://github.com/ningbaoqi/BroadcastReceiver/commit/0f10f9629507854bbdf254516c12753070de36e2)
+[使用广播接收器监听SD卡状态](https://github.com/ningbaoqi/BroadcastReceiver/commit/0e37383e7331288157cfbe5a7976fa9439fc576b)
