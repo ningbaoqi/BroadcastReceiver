@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--静态注册广播接收器，可以在应用未启动时，监听到广播并且做出相应的动作，但是在系统广播中，因为发送广播时调用了intent.addFlags(Intent.FLAG_EXCLUDE_STOPPED_PACKAGES)所以在应用未启动时，是无法接收到广播的，但是在自定义发送广播时这个api没有生效-->
+        <!--android:priority设置广播接收器优先级-->
+        <receiver android:name=".MyBroadcastReceiver">
+            <intent-filter
+                android:priority="1000">
+                <action android:name="dashuige"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
